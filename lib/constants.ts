@@ -24,7 +24,7 @@ export const siteConfig = {
 			//href: '/experience',
 		//},
 		{
-			title: 'Projects',
+			title: 'Projects/ Works',
 			href: '/projects',
 		},
 		{
