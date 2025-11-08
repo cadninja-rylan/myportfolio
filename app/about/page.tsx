@@ -19,19 +19,17 @@ export default function AboutPage() {
 					className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
 				>
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
-						<h1 className="text-4xl font-bold">Why Choose Engineering?</h1>
+						<h1 className="text-4xl font-bold">Why Engineering?</h1>
 						<p className="text-lg text-muted-foreground">
-							I chose engineering because I've always been curious about how things work and how they can be improved. 
 							Growing up, I spent hours building in Minecraft, experimenting with redstone, and finding creative ways to solve problems. 
 							That same curiosity for machines and systems is what drew me to engineering. 
-							Eneigneering enables me to turn my imagination into something real, useful, and meaningful.
+							Engineering enables me to turn my imagination into something real, useful, and meaningful.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
 							<p className="text-muted-foreground">
 								Through my studies, I’ve worked on projects that strengthened my technical and software skills. 
 								This foundation is just the start and ’m excited to keep learning and applying what I know in real world settings. 
-								I've always believed that "every experience is a tool to clear your path", and I want to prove to myself how true that is.
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
@@ -74,9 +72,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Interests and Hobbies</h3>
 								<p className="text-muted-foreground">
-									I enjoy staying active and learning new things. 
-									I used to swim competitively and work out regularly. Lately, I’ve been getting into rock climbing (it’s tough). 
-									I also like experimenting with CAD designs and small projects. In my downtime, I’ve rediscovered my love for the 3DS after modding it myself.
+									I used to swim competitively and still work out regularly. Lately, I’ve been getting into rock climbing (it’s tough). 
+									I also like experimenting with CAD designs and creating small projects. In my downtime, im relaxing with my modded 3ds.
 								</p>
 							</CardContent>
 						</Card>
