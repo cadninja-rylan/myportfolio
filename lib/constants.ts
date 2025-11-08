@@ -11,18 +11,18 @@ export const siteConfig = {
 			title: 'About',
 			href: '/about',
 		},
-		{
-			title: 'Education',
-			href: '/education',
-		},
+		//{
+			//title: 'Education',
+			//href: '/education',
+		//},
 		{
 			title: 'Skills',
 			href: '/skills',
 		},
-		{
-			title: 'Experience',
-			href: '/experience',
-		},
+		//{
+			//title: 'Experience', add this when u land a co-op
+			//href: '/experience',
+		//},
 		{
 			title: 'Projects',
 			href: '/projects',
@@ -31,10 +31,10 @@ export const siteConfig = {
 			title: 'Certificates',
 			href: '/certificates',
 		},
-		{
-			title: 'Blog',
-			href: '/blog',
-		},
+		//{
+			//title: 'Blog',
+			//href: '/blog',
+		//},
 		{
 			title: 'Contact',
 			href: '/contact',
@@ -43,10 +43,10 @@ export const siteConfig = {
 	links: {
 		github: 'https://github.com/yourusername',
 		linkedin: 'https://linkedin.com/in/yourusername',
-		twitter: 'https://twitter.com/yourusername',
-		facebook: 'https://facebook.com/yourusername',
-		instagram: 'https://instagram.com/yourusername',
-		whatsapp: 'https://wa.me/yourphonenumber',
+		//twitter: 'https://twitter.com/yourusername',
+		//facebook: 'https://facebook.com/yourusername',
+		//instagram: 'https://instagram.com/yourusername',
+		//whatsapp: 'https://wa.me/yourphonenumber',
 		email: 'mailto:youremail@example.com',
 		phone: 'tel:+1234567890',
 	},
