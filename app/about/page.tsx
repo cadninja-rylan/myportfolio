@@ -86,7 +86,7 @@ export default function AboutPage() {
 								<p className="text-muted-foreground">
 									I created this site to track my growth and reflect on my accomplishments. 
 									It’s a space for me to document progress, stay motivated, and set new goals. 
-									Thus by doccumenting, I can better understand where I’ve been and where I want to go.
+									By doccumenting, I can better understand where I’ve been and where I want to go.
 								</p>
 							</CardContent>
 						</Card>
