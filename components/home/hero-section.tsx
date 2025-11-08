@@ -72,7 +72,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						A collection work in the field of engineering.
+						A collection of my work in the field of engineering.
 					</motion.p>
 
 					<motion.div
