@@ -13,33 +13,33 @@ export function Footer() {
 		{ icon: <Mail className="h-5 w-5" />, href: siteConfig.links.email, label: 'Email' },
 		{ icon: <Linkedin className="h-5 w-5" />, href: siteConfig.links.linkedin, label: 'LinkedIn' },
 		{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' },
-		{ icon: <MessageSquare className="h-5 w-5" />, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
-		{ icon: <Twitter className="h-5 w-5" />, href: siteConfig.links.twitter, label: 'Twitter' },
-		{ icon: <Facebook className="h-5 w-5" />, href: siteConfig.links.facebook, label: 'Facebook' },
-		{ icon: <Instagram className="h-5 w-5" />, href: siteConfig.links.instagram, label: 'Instagram' },
+		//{ icon: <MessageSquare className="h-5 w-5" />, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
+		//{ icon: <Twitter className="h-5 w-5" />, href: siteConfig.links.twitter, label: 'Twitter' },
+		//{ icon: <Facebook className="h-5 w-5" />, href: siteConfig.links.facebook, label: 'Facebook' },
+		//{ icon: <Instagram className="h-5 w-5" />, href: siteConfig.links.instagram, label: 'Instagram' },
 	];
 
 	const navColumns = [
 		{
-			title: 'About',
+			title: 'About Me',
 			links: [
-				{ title: 'About Me', href: '/about' },
-				{ title: 'Education', href: '/education' },
+				{ title: 'About', href: '/about' },
+				//{ title: 'Education', href: '/education' },
 				{ title: 'Skills', href: '/skills' },
 			],
 		},
 		{
 			title: 'Work',
 			links: [
-				{ title: 'Experience', href: '/experience' },
-				{ title: 'Projects', href: '/projects' },
+				//{ title: 'Experience', href: '/experience' },
+				{ title: 'Projects/ Works', href: '/projects' },
 				{ title: 'Certificates', href: '/certificates' },
 			],
 		},
 		{
 			title: 'Connect',
 			links: [
-				{ title: 'Blog', href: '/blog' },
+				//{ title: 'Blog', href: '/blog' },
 				{ title: 'Contact', href: '/contact' },
 				{ title: 'Resume', href: '#', download: true },
 			],
