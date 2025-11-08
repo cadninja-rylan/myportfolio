@@ -22,18 +22,16 @@ export default function AboutPage() {
 						<h1 className="text-4xl font-bold">Why Choose Engineering?</h1>
 						<p className="text-lg text-muted-foreground">
 							I chose engineering because I've always been curious about how things work and how they can be improved. 
-							Growing up, I spent hours playing Minecraft, designing buildings, experimenting with redstone, and ultimately solving problems to make things better. 
-							I've always been creative and curious in my thinking, and this mindset has carried over into real life. 
-							I became interested in how machines and systems are actually built. Engineering felt like the perfect path for me to turn 
-							my mindset into something real, meaningful, and something I could be proud of.
+							Growing up, I spent hours building in Minecraft, experimenting with redstone, and finding creative ways to solve problems. 
+							That same curiosity for machines and systems is what drew me to engineering. 
+							Eneigneering enables me to turn my imagination into something real, useful, and meaningful.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
 							<p className="text-muted-foreground">
-								Throughout my academic journey, I’ve completed various projects and tasks that have strengthened 
-								my technical and software skills and theoretical understanding. I am confident that with the work I have done,
-								I will be able to apply and demonstrate my skills further in real-world situations. I see this foundation as just my beginning, 
-								and I’m eager to continue learning and developing.
+								Through my studies, I’ve worked on projects that strengthened my technical and software skills. 
+								This foundation is just the start and ’m excited to keep learning and applying what I know in real world settings. 
+								I've always believed that "every experience is a tool to clear your path", and I want to prove to myself how true that is.
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
@@ -76,11 +74,9 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Interests and Hobbies</h3>
 								<p className="text-muted-foreground">
-									I enjoy staying active and discovering new things. 
-									I swam competitively for several years and work out regularly. 
-									I've been learning how to rock climb and so far its been very challenging...
-									I also spend time improving my CAD design skills by experimenting and creating small parts and projects. 
-									In my free time, I’ve also rediscovered my love for playing games on my 3DS, I recently modded my own and its been a fun experience.
+									I enjoy staying active and learning new things. 
+									I used to swim competitively and work out regularly. Lately, I’ve been getting into rock climbing (it’s tough). 
+									I also like experimenting with CAD designs and small projects. In my downtime, I’ve rediscovered my love for the 3DS after modding it myself.
 								</p>
 							</CardContent>
 						</Card>
@@ -91,10 +87,9 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">About This Site</h3>
 								<p className="text-muted-foreground">
-									Ive always wanted to journal and track my growth, personally and professionally. 
-									I want to use this site as a way to reflect on the progress I've made, doccumenting the skills I've learned and challenges I've overcome. 
-									I want this site to serve as a place for me to find the motivation to keep pushing forward, set new goals, and reach hights I never thought possible.
-									By looking back on what I've done, I can understand where I've come from and where I want to go.
+									I created this site to track my growth and reflect on what I’ve learned. 
+									It’s a space for me to document progress, stay motivated, and set new goals. 
+									By reflecting on this site, I can better understand where I’ve been and where I want to go.
 								</p>
 							</CardContent>
 						</Card>
