@@ -23,8 +23,8 @@ export default function CertificatesPage() {
 					>
 						<h1 className="text-4xl font-bold mb-4">Certificates</h1>
 						<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-							Professional certifications and achievements that demonstrate my expertise
-							and commitment to continuous learning.
+							Professional certifications demonstrating my expertise
+							and motivation to learn.
 						</p>
 					</motion.div>
 
