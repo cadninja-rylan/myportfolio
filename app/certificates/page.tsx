@@ -34,8 +34,19 @@ export default function CertificatesPage() {
                 key={index}
                 variants={fadeIn('up', 0.2 * index)}
               >
-                <Card className="card-gradient">
-                  <CardContent className="p-6">
+                <Card className="card-gradient overflow-hidden flex flex-col">
+                  {/* PDF preview as "image" */}
+                  {cert.pdf && (
+                    <div className="h-48 w-full overflow-hidden bg-muted">
+                      <iframe
+                        src={cert.pdf}
+                        title={cert.title}
+                        className="w-full h-full pointer-events-none scale-[1.05]"
+                      />
+                    </div>
+                  )}
+
+                  <CardContent className="p-6 flex-1">
                     <div className="flex items-start gap-4">
                       <Award className="h-8 w-8 text-primary shrink-0" />
                       <div>
@@ -57,10 +68,10 @@ export default function CertificatesPage() {
                     </div>
                   </CardContent>
 
-                  <CardFooter className="p-6 pt-0 gap-2">
+                  <CardFooter className="p-6 pt-0">
                     {cert.pdf && (
                       <Button size="sm" variant="default" asChild>
-                        <a href={cert.pdf} download>
+                        <a href={cert.pdf} target="_blank" rel="noreferrer">
                           <FileDown className="h-4 w-4 mr-2" />
                           Download
                         </a>
