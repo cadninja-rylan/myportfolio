@@ -188,7 +188,7 @@ export const certificates: Certificate[] = [
 		date: 'Oct 2024',
 		id: 'C-E8MZHVLJF9',
 		url: '#',
-		pdf: '/certificates/sample.pdf',
+		pdf: '/Certificate_C-E8MZHVLJF9.pdf',
 	},
 	{
 		title: 'Onshape Introduction to Assembly Design Completion',
@@ -196,7 +196,7 @@ export const certificates: Certificate[] = [
 		date: 'Jan 2024',
 		id: 'N/A',
 		url: '#',
-		pdf: '/certificates/sample.pdf',
+		pdf: '/rylan-prima-a37f0d4b-e6fc-4d93-acbf-77e42c72dd03-certificate.pdf',
 	},
 	{
 		title: 'Onshape Introduction to Part Design Completion',
@@ -204,7 +204,7 @@ export const certificates: Certificate[] = [
 		date: 'Jan 2024',
 		id: 'N/A',
 		url: '#',
-		pdf: '/certificates/sample.pdf',
+		pdf: '/rylan-prima-65183b8f-1740-44b3-9b6b-efa0eaf97223-certificate.pdf',
 	},
 ];
 
