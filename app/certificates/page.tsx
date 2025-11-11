@@ -53,15 +53,20 @@ export default function CertificatesPage() {
 										</div>
 									</CardContent>
 									<CardFooter className="p-6 pt-0 gap-2">
-										{cert.pdf && (
-  <Button size="sm" asChild>
-    <a href={cert.pdf} target="_blank" rel="noreferrer">
+  {cert.pdf && (
+    <a
+      href={cert.pdf}
+      target="_blank"
+      rel="noreferrer"
+      download
+      className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary/90 transition-colors"
+    >
       <FileDown className="h-4 w-4 mr-2" />
       Download
     </a>
-  </Button>
-)}
-									</CardFooter>
+  )}
+</CardFooter>
+
 								</Card>
 							</motion.div>
 						))}
