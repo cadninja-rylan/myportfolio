@@ -53,22 +53,14 @@ export default function CertificatesPage() {
 										</div>
 									</CardContent>
 									<CardFooter className="p-6 pt-0 gap-2">
-										{cert.url && (
-											<Button size="sm" variant="outline" asChild>
-												<a href={cert.url} target="_blank" rel="noreferrer">
-													<ExternalLink className="h-4 w-4 mr-2" />
-													Verify
-												</a>
-											</Button>
-										)}
 										{cert.pdf && (
-											<Button size="sm" variant="outline" asChild>
-												<a href={cert.pdf} download>
-													<FileDown className="h-4 w-4 mr-2" />
-													Download
-												</a>
-											</Button>
-										)}
+  <Button size="sm" asChild>
+    <a href={cert.pdf} target="_blank" rel="noreferrer">
+      <FileDown className="h-4 w-4 mr-2" />
+      Download
+    </a>
+  </Button>
+)}
 									</CardFooter>
 								</Card>
 							</motion.div>
