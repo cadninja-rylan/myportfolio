@@ -20,7 +20,6 @@ export default function ProjectsPage() {
 					initial="hidden"
 					animate="show"
 				>
-					{/* PAGE HEADER */}
 					<motion.div
 						variants={fadeInScale(0.2)}
 						className="text-center mb-12"
@@ -32,11 +31,11 @@ export default function ProjectsPage() {
 						</p>
 					</motion.div>
 
-					{/* FIRST ROW OF 3 PROJECTS */}
+					{/* FIRST ROW */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-						{projects.slice(0, 3).map((project, index) => (
+						{projects.map((project, index) => (
 							<motion.div
-								key={index}
+								key={`top-${index}`}
 								variants={fadeInScale(index * 0.1)}
 								className="flex"
 							>
@@ -52,9 +51,7 @@ export default function ProjectsPage() {
 									</div>
 									<CardContent className="flex-grow p-6">
 										<h3 className="font-bold text-xl mb-2">{project.title}</h3>
-										<p className="text-muted-foreground mb-4">
-											{project.description}
-										</p>
+										<p className="text-muted-foreground mb-4">{project.description}</p>
 										<div className="flex flex-wrap gap-2">
 											{project.tags.map((tag, tagIndex) => (
 												<Badge key={tagIndex} variant="secondary">
@@ -66,11 +63,7 @@ export default function ProjectsPage() {
 									<CardFooter className="p-6 pt-0 gap-2">
 										{project.link && (
 											<Button size="sm" variant="outline" asChild>
-												<Link
-													href={project.link}
-													target="_blank"
-													rel="noreferrer"
-												>
+												<Link href={project.link} target="_blank" rel="noreferrer">
 													<ExternalLink className="h-4 w-4 mr-2" />
 													Demo
 												</Link>
@@ -78,11 +71,7 @@ export default function ProjectsPage() {
 										)}
 										{project.repo && (
 											<Button size="sm" variant="outline" asChild>
-												<Link
-													href={project.repo}
-													target="_blank"
-													rel="noreferrer"
-												>
+												<Link href={project.repo} target="_blank" rel="noreferrer">
 													<Github className="h-4 w-4 mr-2" />
 													Repo
 												</Link>
@@ -94,11 +83,11 @@ export default function ProjectsPage() {
 						))}
 					</div>
 
-					{/* SECOND ROW OF 3 PROJECTS */}
+					{/* SECOND ROW (DUPLICATE) */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{projects.slice(3, 6).map((project, index) => (
+						{projects.map((project, index) => (
 							<motion.div
-								key={index + 3}
+								key={`bottom-${index}`}
 								variants={fadeInScale(index * 0.1)}
 								className="flex"
 							>
@@ -114,9 +103,7 @@ export default function ProjectsPage() {
 									</div>
 									<CardContent className="flex-grow p-6">
 										<h3 className="font-bold text-xl mb-2">{project.title}</h3>
-										<p className="text-muted-foreground mb-4">
-											{project.description}
-										</p>
+										<p className="text-muted-foreground mb-4">{project.description}</p>
 										<div className="flex flex-wrap gap-2">
 											{project.tags.map((tag, tagIndex) => (
 												<Badge key={tagIndex} variant="secondary">
@@ -128,11 +115,7 @@ export default function ProjectsPage() {
 									<CardFooter className="p-6 pt-0 gap-2">
 										{project.link && (
 											<Button size="sm" variant="outline" asChild>
-												<Link
-													href={project.link}
-													target="_blank"
-													rel="noreferrer"
-												>
+												<Link href={project.link} target="_blank" rel="noreferrer">
 													<ExternalLink className="h-4 w-4 mr-2" />
 													Demo
 												</Link>
@@ -140,11 +123,7 @@ export default function ProjectsPage() {
 										)}
 										{project.repo && (
 											<Button size="sm" variant="outline" asChild>
-												<Link
-													href={project.repo}
-													target="_blank"
-													rel="noreferrer"
-												>
+												<Link href={project.repo} target="_blank" rel="noreferrer">
 													<Github className="h-4 w-4 mr-2" />
 													Repo
 												</Link>
