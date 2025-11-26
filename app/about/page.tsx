@@ -12,6 +12,7 @@ export default function AboutPage() {
 	return (
 		<div className="py-16 md:py-24">
 			<div className="container">
+				{/* TOP TEXT + LARGE IMAGE */}
 				<motion.div
 					variants={staggerContainer()}
 					initial="hidden"
@@ -21,15 +22,17 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">Why Engineering?</h1>
 						<p className="text-lg text-muted-foreground">
-							Growing up, I spent hours building in Minecraft, experimenting with redstone, and finding creative ways to solve problems. 
-							That same curiosity for machines and systems is what drew me to engineering. 
-							Engineering enables me to turn my imagination into something real, useful, and meaningful.
+							Growing up, I spent hours building in Minecraft, experimenting with redstone, and
+							finding creative ways to solve problems. That same curiosity for machines and
+							systems is what drew me to engineering. Engineering enables me to turn my
+							imagination into something real, useful, and meaningful.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
 							<p className="text-muted-foreground">
-								Through my studies, I’ve worked on projects that strengthened my technical and software skills. 
-								This foundation is just the start and ’m excited to keep learning and applying what I know in real world settings. 
+								Through my studies, I’ve worked on projects that strengthened my technical and
+								software skills. This foundation is just the start and I&apos;m excited to keep
+								learning and applying what I know in real-world settings.
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
@@ -50,6 +53,7 @@ export default function AboutPage() {
 					</motion.div>
 				</motion.div>
 
+				{/* THREE TEXT CARDS */}
 				<motion.div
 					variants={staggerContainer()}
 					initial="hidden"
@@ -61,8 +65,10 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									University of Western Ontario<br />
-									B.E.Sc Mechanical Engineering<br />
+									University of Western Ontario
+									<br />
+									B.E.Sc Mechanical Engineering
+									<br />
 									3rd Year
 								</p>
 							</CardContent>
@@ -74,8 +80,10 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Interests and Hobbies</h3>
 								<p className="text-muted-foreground">
-									I used to swim competitively and still work out regularly. Lately, I’ve been getting into rock climbing (it’s tough). 
-									I also like experimenting with CAD designs and creating small projects. In my downtime, im relaxing with my modded 3ds.
+									I used to swim competitively and still work out regularly. Lately, I’ve been
+									getting into rock climbing (it’s tough). I also like experimenting with CAD
+									designs and creating small projects. In my downtime, I&apos;m relaxing with my
+									modded 3DS.
 								</p>
 							</CardContent>
 						</Card>
@@ -86,13 +94,37 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">About This Site</h3>
 								<p className="text-muted-foreground">
-									I created this site to track my growth and reflect on my accomplishments. 
-									It’s a space for me to document progress, stay motivated, and set new goals. 
-									By doccumenting, I can better understand where I’ve been and where I want to go.
+									I created this site to track my growth and reflect on my accomplishments. It’s a
+									space for me to document progress, stay motivated, and set new goals. By
+									documenting, I can better understand where I’ve been and where I want to go.
 								</p>
 							</CardContent>
 						</Card>
 					</motion.div>
+				</motion.div>
+
+				{/* THREE IMAGES, EQUALLY SPACED LIKE THE CARDS */}
+				<motion.div
+					variants={staggerContainer()}
+					initial="hidden"
+					animate="show"
+					className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
+				>
+					{[1, 2, 3].map((i) => (
+						<motion.div
+							key={i}
+							variants={fadeIn('up', 0.1 * i)}
+							className="relative h-56 md:h-64 rounded-lg overflow-hidden"
+						>
+							<Image
+								src="/MC.png" // reuse your existing image; change paths later if you want
+								alt={`Engineering image ${i}`}
+								fill
+								className="object-cover"
+								sizes="(max-width: 768px) 100vw, 33vw"
+							/>
+						</motion.div>
+					))}
 				</motion.div>
 			</div>
 		</div>
