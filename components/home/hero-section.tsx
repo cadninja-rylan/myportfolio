@@ -103,7 +103,7 @@ export function HeroSection() {
               href="/about"
               className="px-3 py-1 rounded-full border border-border/60 bg-background/60 hover:bg-background/90 transition-colors"
             >
-              About
+              About Me
             </Link>
             <Link
               href="/skills"
