@@ -102,29 +102,182 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
-		title: 'Smart Home Automation System',
+		title: 'Sketching and Primary Features  -  Part #1',
 		description:
-			'Designed and implemented a smart home automation system using IoT technologies to control lighting, temperature, and security features.',
+			'Developed fully defined 3D parts using sketch relations, constraints, and primary modeling features like extrudes, extrude cuts, fillets, and chamfers; Focused on clean sketch geometry, and dimension driven modeling for manufacturable components.',
 		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
+		tags: ['SolidWorks', 'Sketching', 'Extrude', 'Extrude Cuts', 'Fillets', 'Chamfers'],
 		link: '#',
 		repo: '#',
 	},
 	{
-		title: 'Structural Analysis Software',
+		title: 'Part #2',
 		description:
-			'Developed software for structural analysis of beams and trusses using numerical methods and visualization techniques.',
+			'',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #3',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #4',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Secondary Features and Part Modeling  -  Part #1',
+		description:
+			'Created complex parts using secondary modeling tools such as revolves, linear/circular patterns, cut-extrudes, fillets, and chamfers. Designed functional mechanical components maintaining geometric accuracy and clean parametric design intent.',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		tags: ['SolidWorks', 'Extrude', 'Cut-Extrude', 'Revolve', 'Fillets', 'Chamfers', 'Patterning'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #2',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #3',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #4',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Mechanical Assembly Modeling  -  Part #1',
+		description:
+			'Built multi-component assembliess with fully constrained mates such as concentric, coincident, parallel, tanget, width, and distance mates. Verified kinematic motion.',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: ['SolidWorks', 'Assembly', 'Mates', 'Motion Study'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #2',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #3',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Engineering Drawings and Detailing  -  Part #1',
+		description:
+			'Produced complete engineering drawings from 3D models, including multi-view projections, auxiliary and section views, detailed dimensions, and GD&T-ready annotations. Generated exploded assembly views with a full bill of materials (BOM) to document part relationships and manufacturing requirements.',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: ['SolidWorks', 'Engineering Drawings', 'Multi-View Projections', 'Section Views', 'Auxiliary Views', 'Exploded Assembly', 'BOM', 'Dimensioning'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #2',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #3',
+		description:
+			'',
 		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
 		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
 		link: '#',
 		repo: '#',
 	},
 	{
-		title: 'Renewable Energy Monitoring',
+		title: 'Part #4',
 		description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
+			'',
 		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Parametric Design (Equations and Configurations)  -  Part #1',
+		description:
+			'Built fully parametric 3D parts using equations, driven dimensions, and design tables to automate geometry updates and generate multiple part configurations.',
+		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		tags: ['SolidWorks', 'Global Variables', 'Design Tables', 'Configurations'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Part #2',
+		description:
+			'',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		tags: [],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'CSWA — Certified SolidWorks Associate',
+		description:
+			'Achieved a perfect score on the CSWA exam. Accurately modelled and dimensioned multiple mechanical parts, calculated exact mass properties, and fully assembled/mated components under timed exam conditions.',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: ['SolidWorks', 'CSWA', 'Mass Properties', 'Assemblies', 'Mates'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Tornado Simulation',
+		description:
+			'I collaborated with a team to build a functional tornado machine exhibit. My role was creating the initial design sketches, planning material requirements, and assisting with hands-on assembly, including securing structural components and hardware.',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		tags: ['Sketching', 'Prototyping', 'Engineering Design', 'Team Project', 'Mechanical Design', 'Build Assembly', 'Fog Machine', 'Concept Development'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'AI in Healthcare Diagnostics',
+		description:
+    		'Designed a research poster summarizing key issues in AI-driven healthcare diagnostics, focusing on algorithmic bias, patient data privacy, and explainable AI.',
+  		image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg',
+		tags: ['AI', 'Healthcare Innovation', 'Diagnostics', 'Data Privacy', 'Algorithmic Bias', 'Explainable AI', 'Ethics'],
 		link: '#',
 		repo: '#',
 	},
