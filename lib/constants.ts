@@ -223,7 +223,7 @@ export const projects: Project[] = [
 		description:
 			'',
 		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
+		tags: [],
 		link: '#',
 		repo: '#',
 	},
