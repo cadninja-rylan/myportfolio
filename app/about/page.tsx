@@ -68,7 +68,7 @@ export default function AboutPage() {
 							{/* Top image */}
 							<div className="relative h-48 w-full">
 								<Image
-									src="/MC.png"
+									src="/WesternLogo.jpg"
 									alt="Education illustration"
 									fill
 									className="object-cover"
@@ -93,7 +93,7 @@ export default function AboutPage() {
 						<Card className="h-full card-gradient overflow-hidden">
 							<div className="relative h-48 w-full">
 								<Image
-									src="/MC.png"
+									src="/3DS Picture.jpg"
 									alt="Interests and hobbies"
 									fill
 									className="object-cover"
@@ -117,7 +117,7 @@ export default function AboutPage() {
 						<Card className="h-full card-gradient overflow-hidden">
 							<div className="relative h-48 w-full">
 								<Image
-									src="/MC.png"
+									src="/Headshot Place Holder.jpg"
 									alt="About this site"
 									fill
 									className="object-cover"
