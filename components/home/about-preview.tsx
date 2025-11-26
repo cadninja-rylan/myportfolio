@@ -20,8 +20,7 @@ export function AboutPreview() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-          
-          {/* LEFT IMAGE */}
+          {/* LEFT: IMAGE */}
           <motion.div
             variants={fadeIn('right', 0.3)}
             initial="hidden"
@@ -29,17 +28,17 @@ export function AboutPreview() {
             viewport={{ once: true }}
             className="relative h-[400px] rounded-lg overflow-hidden"
           >
+            {/* IMPORTANT: this looks in /public/MC.png */}
             <Image
               src="/MC.png"
-              alt="Engineering Showcase"
+              alt="Engineer portrait"
               fill
-              priority
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
 
-          {/* RIGHT TEXT */}
+          {/* RIGHT: TEXT */}
           <motion.div
             variants={fadeIn('left', 0.3)}
             initial="hidden"
@@ -49,34 +48,33 @@ export function AboutPreview() {
           >
             <h3 className="text-2xl font-bold mb-4">Engineer in the Making</h3>
             <p className="text-muted-foreground mb-6">
-              I am an engineering student eager to tackle any problem I face. My
-              academic journey has equipped me with strong technical and behavioral
-              skills, and I continue striving to deepen my understanding of real-world
-              engineering principles.
+              I am an engineering student eager to tackle any problem I face. My academic
+              journey thus far has equipped me with strong technical and behavioral skills
+              necessary, but there is more for me to learn. My goal is to have a mature
+              understanding of engineering principles and apply them to real-world challenges.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
               <Card className="card-gradient">
                 <CardContent className="p-4">
                   <h4 className="font-semibold">Program</h4>
-                  <p className="text-sm text-muted-foreground">B.E.Sc Mechanical Engineering</p>
+                  <p className="text-sm text-muted-foreground">
+                    B.E.Sc Mechanical Engineering
+                  </p>
                 </CardContent>
               </Card>
-
               <Card className="card-gradient">
                 <CardContent className="p-4">
-                  <h4 className="font-semibold">Experience</h4>
+                  <h4 className="font-semibold">Academic Experience</h4>
                   <p className="text-sm text-muted-foreground">3+ Years</p>
                 </CardContent>
               </Card>
-
               <Card className="card-gradient">
                 <CardContent className="p-4">
                   <h4 className="font-semibold">Projects</h4>
                   <p className="text-sm text-muted-foreground">X+ Completed</p>
                 </CardContent>
               </Card>
-
               <Card className="card-gradient">
                 <CardContent className="p-4">
                   <h4 className="font-semibold">Certifications</h4>
@@ -91,7 +89,6 @@ export function AboutPreview() {
               </Link>
             </Button>
           </motion.div>
-
         </div>
       </div>
     </section>
