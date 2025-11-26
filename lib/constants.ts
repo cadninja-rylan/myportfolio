@@ -107,8 +107,7 @@ export const projects: Project[] = [
 			'Developed fully defined 3D parts using sketch relations, constraints, and primary modeling features like extrudes, extrude cuts, fillets, and chamfers; Focused on clean sketch geometry, and dimension driven modeling for manufacturable components.',
 		image: '/1001.png',
 		tags: ['SolidWorks', 'Sketching', 'Extrude', 'Extrude Cuts', 'Fillets', 'Chamfers'],
-		link: '#',
-		repo: '#',
+		download: '/1-001.zip',
 	},
 	{
 		title: 'Part #2',
@@ -116,8 +115,7 @@ export const projects: Project[] = [
 			'',
 		image: '/1002.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/1-002.zip',
 	},
 	{
 		title: 'Part #3',
@@ -125,8 +123,7 @@ export const projects: Project[] = [
 			'',
 		image: '/1003.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/1-003.zip',
 	},
 	{
 		title: 'Part #4',
@@ -134,8 +131,7 @@ export const projects: Project[] = [
 			'',
 		image: '/1004.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/1-004.zip',
 	},
 	{
 		title: 'Secondary Features and Part Modeling  -  Part #1',
@@ -143,8 +139,7 @@ export const projects: Project[] = [
 			'Created complex parts using secondary modeling tools such as revolves, linear/circular patterns, cut-extrudes, fillets, and chamfers. Designed functional mechanical components maintaining geometric accuracy and clean parametric design intent.',
 		image: '/2001.png',
 		tags: ['SolidWorks', 'Extrude', 'Cut-Extrude', 'Revolve', 'Fillets', 'Chamfers', 'Patterning'],
-		link: '#',
-		repo: '#',
+		download: '/2-001.zip',
 	},
 	{
 		title: 'Part #2',
@@ -152,8 +147,7 @@ export const projects: Project[] = [
 			'',
 		image: '/2002.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/2-002.zip',
 	},
 	{
 		title: 'Part #3',
@@ -161,8 +155,7 @@ export const projects: Project[] = [
 			'',
 		image: '/2003.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/2-003.zip',
 	},
 	{
 		title: 'Part #4',
@@ -170,8 +163,7 @@ export const projects: Project[] = [
 			'',
 		image: '/2004.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/2-004.zip',
 	},
 	{
 		title: 'Mechanical Assembly Modeling  -  Part #1',
@@ -179,8 +171,7 @@ export const projects: Project[] = [
 			'Built multi-component assembliess with fully constrained mates such as concentric, coincident, parallel, tanget, width, and distance mates. Verified kinematic motion.',
 		image: '/3001.png',
 		tags: ['SolidWorks', 'Assembly', 'Mates', 'Motion Study'],
-		link: '#',
-		repo: '#',
+		download: '/3-001.zip',
 	},
 	{
 		title: 'Part #2',
@@ -188,8 +179,7 @@ export const projects: Project[] = [
 			'',
 		image: '/3002.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/3-002.zip',
 	},
 	{
 		title: 'Part #3',
@@ -197,8 +187,7 @@ export const projects: Project[] = [
 			'',
 		image: '/3003.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/3-003.zip',
 	},
 	{
 		title: 'Engineering Drawings and Detailing  -  Part #1',
@@ -206,8 +195,7 @@ export const projects: Project[] = [
 			'Developed engineering drawings from 3D parts, featuring multi-view projections, section/auxiliary views, precise dimensions, and annotations. Also produced an exploded assembly with a full BOM for clear documentation.',
 		image: '/4001.png',
 		tags: ['SolidWorks', 'Engineering Drawings', 'Multi-View Projections', 'Section Views', 'Auxiliary Views', 'Exploded Assembly', 'BOM', 'Dimensioning'],
-		link: '#',
-		repo: '#',
+		download: '/4-001.zip',
 	},
 	{
 		title: 'Part #2',
@@ -215,8 +203,7 @@ export const projects: Project[] = [
 			'',
 		image: '/4002.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/4-002.zip',
 	},
 	{
 		title: 'Part #3',
@@ -224,8 +211,7 @@ export const projects: Project[] = [
 			'',
 		image: '/4003.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/4-003.zip',
 	},
 	{
 		title: 'Part #4',
@@ -233,8 +219,7 @@ export const projects: Project[] = [
 			'',
 		image: '/4004.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/4-004.zip',
 	},
 	{
 		title: 'Parametric Design (Equations and Configurations)  -  Part #1',
@@ -242,8 +227,7 @@ export const projects: Project[] = [
 			'Built fully parametric 3D parts using equations, driven dimensions, and design tables to automate geometry updates and generate multiple part configurations.',
 		image: '/5001.png',
 		tags: ['SolidWorks', 'Global Variables', 'Design Tables', 'Configurations'],
-		link: '#',
-		repo: '#',
+		download: '/5-001.zip',
 	},
 	{
 		title: 'Part #2',
@@ -251,8 +235,7 @@ export const projects: Project[] = [
 			'',
 		image: '/5002.png',
 		tags: [],
-		link: '#',
-		repo: '#',
+		download: '/5-002.zip',
 	},
 	{
 		title: 'CSWA — Certified SolidWorks Associate',
@@ -260,8 +243,7 @@ export const projects: Project[] = [
 			'Achieved a perfect score on the CSWA exam. Accurately modelled and dimensioned multiple mechanical parts, calculated exact mass properties, and fully assembled/mated components under timed exam conditions.',
 		image: '/CSWA Assembly.png',
 		tags: ['SolidWorks', 'CSWA', 'Mass Properties', 'Assemblies', 'Mates'],
-		link: '#',
-		repo: '#',
+		download: '/CSWA.zip',
 	},
 	{
 		title: 'Tornado Simulation',
@@ -269,8 +251,7 @@ export const projects: Project[] = [
 			'I collaborated with a team to build a functional tornado machine exhibit. My role was creating the initial design sketches, planning material requirements, and assisting with hands-on assembly, including securing structural components and hardware.',
 		image: '/TornadoSim.png',
 		tags: ['Sketching', 'Prototyping', 'Engineering Design', 'Team Project', 'Mechanical Design', 'Build Assembly', 'Fog Machine', 'Concept Development'],
-		link: '#',
-		repo: '#',
+		download: '/Tornado Simulation.zip',
 	},
 	{
 		title: 'AI in Healthcare Diagnostics',
@@ -278,8 +259,7 @@ export const projects: Project[] = [
     		'Designed a research poster summarizing key issues in AI-driven healthcare diagnostics, focusing on algorithmic bias, patient data privacy, and explainable AI.',
   		image: '/Research Poster.png',
 		tags: ['AI', 'Healthcare Innovation', 'Diagnostics', 'Data Privacy', 'Algorithmic Bias', 'Explainable AI', 'Ethics'],
-		link: '#',
-		repo: '#',
+		download: '/AI in Healthcare Diagnostics.zip',
 	},
 ];
 
