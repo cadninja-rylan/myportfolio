@@ -2,8 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Github, ExternalLink } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -32,9 +31,7 @@ function gridClassFor(size: number) {
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
-    // make wrapper fill row height
     <motion.div variants={fadeInScale(index * 0.05)} className="h-full">
-      {/* make card stretch to wrapper height */}
       <Card className="flex flex-col h-full card-gradient">
         <div className="relative h-48 w-full">
           <Image
@@ -45,9 +42,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           />
         </div>
+
         <CardContent className="flex-grow p-6 flex flex-col">
           <h3 className="font-bold text-xl mb-2">{project.title}</h3>
-          {/* clamp so super-long descriptions don’t blow up the height */}
           <p className="text-muted-foreground mb-4 line-clamp-4">
             {project.description}
           </p>
@@ -59,21 +56,15 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             ))}
           </div>
         </CardContent>
+
         <CardFooter className="p-6 pt-0 gap-2">
-          {project.link && (
+          {project.download && (
             <Button size="sm" variant="outline" asChild>
-              <Link href={project.link} target="_blank" rel="noreferrer">
-                <ExternalLink className="h-4 w-4 mr-2" />
-                Demo
-              </Link>
-            </Button>
-          )}
-          {project.repo && (
-            <Button size="sm" variant="outline" asChild>
-              <Link href={project.repo} target="_blank" rel="noreferrer">
-                <Github className="h-4 w-4 mr-2" />
-                Repo
-              </Link>
+              {/* normal <a> tag so we can use the download attribute */}
+              <a href={project.download} download>
+                <Download className="h-4 w-4 mr-2" />
+                Download
+              </a>
             </Button>
           )}
         </CardFooter>
@@ -83,7 +74,6 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 }
 
 export default function ProjectsPage() {
-  // slice the real projects array according to rowConfigs
   const rows: Project[][] = [];
   let start = 0;
 
@@ -115,7 +105,6 @@ export default function ProjectsPage() {
             {rows.map((row, rowIndex) => (
               <div
                 key={rowIndex}
-                // items-stretch makes all children in this row share the same track height
                 className={`grid gap-8 items-stretch ${gridClassFor(row.length)}`}
               >
                 {row.map((project, idx) => (
