@@ -258,7 +258,7 @@ export const projects: Project[] = [
 		title: 'CSWA — Certified SolidWorks Associate',
 		description:
 			'Achieved a perfect score on the CSWA exam. Accurately modelled and dimensioned multiple mechanical parts, calculated exact mass properties, and fully assembled/mated components under timed exam conditions.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		image: '/CSWA Assembly.png',
 		tags: ['SolidWorks', 'CSWA', 'Mass Properties', 'Assemblies', 'Mates'],
 		link: '#',
 		repo: '#',
@@ -267,7 +267,7 @@ export const projects: Project[] = [
 		title: 'Tornado Simulation',
 		description:
 			'I collaborated with a team to build a functional tornado machine exhibit. My role was creating the initial design sketches, planning material requirements, and assisting with hands-on assembly, including securing structural components and hardware.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		image: '/TornadoSim.png',
 		tags: ['Sketching', 'Prototyping', 'Engineering Design', 'Team Project', 'Mechanical Design', 'Build Assembly', 'Fog Machine', 'Concept Development'],
 		link: '#',
 		repo: '#',
@@ -276,7 +276,7 @@ export const projects: Project[] = [
 		title: 'AI in Healthcare Diagnostics',
 		description:
     		'Designed a research poster summarizing key issues in AI-driven healthcare diagnostics, focusing on algorithmic bias, patient data privacy, and explainable AI.',
-  		image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg',
+  		image: '/Research Poster.png',
 		tags: ['AI', 'Healthcare Innovation', 'Diagnostics', 'Data Privacy', 'Algorithmic Bias', 'Explainable AI', 'Ethics'],
 		link: '#',
 		repo: '#',
