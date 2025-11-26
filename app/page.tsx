@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import { HeroSection } from '@/components/home/hero-section';
-import { AboutPreview } from '@/components/home/about-preview';
-import { ProjectsPreview } from '@/components/home/projects-preview';
-import { SkillsPreview } from '@/components/home/skills-preview';
-import { ContactPreview } from '@/components/home/contact-preview';
+// We keep the imports below in case you want them later,
+// but they’re no longer used on the page.
+// import { AboutPreview } from '@/components/home/about-preview';
+// import { ProjectsPreview } from '@/components/home/projects-preview';
+// import { SkillsPreview } from '@/components/home/skills-preview';
+// import { ContactPreview } from '@/components/home/contact-preview';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -59,11 +61,18 @@ export default function Home() {
 
       {!isLoading && (
         <>
+          {/* Only show the hero on the home page */}
           <HeroSection />
+
+          {/* If you ever want the text sections back,
+              just uncomment these lines: */}
+
+          {/*
           <AboutPreview />
           <ProjectsPreview />
           <SkillsPreview />
           <ContactPreview />
+          */}
         </>
       )}
     </>
