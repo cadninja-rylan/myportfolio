@@ -12,7 +12,7 @@ import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
 // how many cards you want per row on desktop
-const rowConfigs = [4, 4, 3, 4, 2, 1, 2];
+const rowConfigs = [2, 2, 2, 2, 3, 2, 2, 1, 2];
 
 type Project = (typeof projects)[number];
 
