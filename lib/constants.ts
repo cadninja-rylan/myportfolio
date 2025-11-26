@@ -98,6 +98,7 @@ export type Project = {
 	tags: string[];
 	link?: string;
 	repo?: string;
+	download?: string;
 };
 
 export const projects: Project[] = [
