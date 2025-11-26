@@ -203,7 +203,7 @@ export const projects: Project[] = [
 	{
 		title: 'Engineering Drawings and Detailing  -  Part #1',
 		description:
-			'Produced complete engineering drawings from 3D models, including multi-view projections, auxiliary and section views, detailed dimensions, and GD&T-ready annotations. Generated exploded assembly views with a full bill of materials (BOM) to document part relationships and manufacturing requirements.',
+			'Developed engineering drawings from 3D parts, featuring multi-view projections, section/auxiliary views, precise dimensions, and annotations. Also produced an exploded assembly with a full BOM for clear documentation.',
 		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
 		tags: ['SolidWorks', 'Engineering Drawings', 'Multi-View Projections', 'Section Views', 'Auxiliary Views', 'Exploded Assembly', 'BOM', 'Dimensioning'],
 		link: '#',
