@@ -11,10 +11,15 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
-// Desired layout per row: 2, 2, 2, 2, 3, 2, 2, 2, 1, 2  (total = 20)
+// Desired layout per row: 2, 2, 2, 2, 3, 2, 2, 2, 1, 2  -> total 20
 const rowConfigs = [2, 2, 2, 2, 3, 2, 2, 2, 1, 2];
 
 type Project = (typeof projects)[number];
+
+type Row = {
+  size: number;
+  items: Project[];
+};
 
 function gridClassFor(size: number) {
   switch (size) {
@@ -23,7 +28,7 @@ function gridClassFor(size: number) {
     case 3:
       return 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3';
     case 2:
-      return 'grid-cols-1 md:grid-cols-2 xl:grid-cols-2';
+      return 'grid-cols-1 md:grid-cols-2';
     case 1:
     default:
       return 'grid-cols-1';
@@ -32,7 +37,7 @@ function gridClassFor(size: number) {
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
-    <motion.div variants={fadeInScale(index * 0.05)} className="h-full">
+    <motion.div variants={fadeInScale(index * 0.05)} className="flex">
       <Card className="flex flex-col h-full card-gradient">
         <div className="relative h-48 w-full">
           <Image
@@ -80,16 +85,17 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 }
 
 export default function ProjectsPage() {
-  // Build rows according to rowConfigs
-  const rows: { size: number; items: Project[] }[] = [];
-  let offset = 0;
+  // Build rows that follow rowConfigs exactly
+  const rows: Row[] = [];
+  let start = 0;
 
   for (const size of rowConfigs) {
-    if (offset >= projects.length) break;
-    const slice = projects.slice(offset, offset + size);
+    if (start >= projects.length) break;
+    const slice = projects.slice(start, start + size);
     if (!slice.length) break;
+
     rows.push({ size, items: slice });
-    offset += size;
+    start += size;
   }
 
   return (
@@ -101,7 +107,7 @@ export default function ProjectsPage() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          {/* HEADER */}
+          {/* Header */}
           <motion.div variants={fadeInScale(0.2)} className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">Projects / Works</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -110,7 +116,7 @@ export default function ProjectsPage() {
             </p>
           </motion.div>
 
-          {/* ROWS */}
+          {/* Rows */}
           <div className="space-y-12">
             {rows.map((row, rowIndex) => (
               <div
