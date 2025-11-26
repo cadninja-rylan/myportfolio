@@ -11,11 +11,28 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
+// Desired layout per row: 2, 2, 2, 2, 3, 2, 2, 2, 1, 2  (total = 20)
+const rowConfigs = [2, 2, 2, 2, 3, 2, 2, 2, 1, 2];
+
 type Project = (typeof projects)[number];
+
+function gridClassFor(size: number) {
+  switch (size) {
+    case 4:
+      return 'grid-cols-1 md:grid-cols-2 xl:grid-cols-4';
+    case 3:
+      return 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3';
+    case 2:
+      return 'grid-cols-1 md:grid-cols-2 xl:grid-cols-2';
+    case 1:
+    default:
+      return 'grid-cols-1';
+  }
+}
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
-    <motion.div variants={fadeInScale(index * 0.05)} className="flex">
+    <motion.div variants={fadeInScale(index * 0.05)} className="h-full">
       <Card className="flex flex-col h-full card-gradient">
         <div className="relative h-48 w-full">
           <Image
@@ -26,21 +43,19 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           />
         </div>
-
         <CardContent className="flex-grow p-6">
           <h3 className="font-bold text-xl mb-2">{project.title}</h3>
           <p className="text-muted-foreground mb-4">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag, i) => (
-              <Badge key={i} variant="secondary">
+            {project.tags.map((tag, tagIndex) => (
+              <Badge key={tagIndex} variant="secondary">
                 {tag}
               </Badge>
             ))}
           </div>
         </CardContent>
-
         <CardFooter className="p-6 pt-0 gap-2">
           {project.link && (
             <Button size="sm" variant="outline" asChild>
@@ -65,31 +80,51 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 }
 
 export default function ProjectsPage() {
+  // Build rows according to rowConfigs
+  const rows: { size: number; items: Project[] }[] = [];
+  let offset = 0;
+
+  for (const size of rowConfigs) {
+    if (offset >= projects.length) break;
+    const slice = projects.slice(offset, offset + size);
+    if (!slice.length) break;
+    rows.push({ size, items: slice });
+    offset += size;
+  }
+
   return (
     <div className="py-16 md:py-24">
       <div className="container">
         <motion.div
           variants={staggerContainer()}
           initial="hidden"
-          animate="show"
+          whileInView="show"
+          viewport={{ once: true }}
         >
           {/* HEADER */}
           <motion.div variants={fadeInScale(0.2)} className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">Projects / Works</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my engineering and CAD projects, demonstrating
-              design, analysis, and creative problem-solving.
+              A showcase of my engineering and CAD projects, demonstrating design,
+              analysis, and creative problem-solving.
             </p>
           </motion.div>
 
-          {/* SINGLE GRID FOR ALL PROJECTS */}
-          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {projects.map((project, index) => (
-              <ProjectCard
-                key={`${project.title}-${index}`}
-                project={project}
-                index={index}
-              />
+          {/* ROWS */}
+          <div className="space-y-12">
+            {rows.map((row, rowIndex) => (
+              <div
+                key={rowIndex}
+                className={`grid gap-8 ${gridClassFor(row.size)}`}
+              >
+                {row.items.map((project, idx) => (
+                  <ProjectCard
+                    key={`${project.title}-${rowIndex}-${idx}`}
+                    project={project}
+                    index={rowIndex * 10 + idx}
+                  />
+                ))}
+              </div>
             ))}
           </div>
         </motion.div>
