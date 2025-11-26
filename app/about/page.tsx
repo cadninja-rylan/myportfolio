@@ -61,7 +61,9 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Currently in my 3rd Year pursuing a Bachelor's degree in Mechanical Engineering at the University of Western Ontario.
+									University of Western Ontario<br />
+									B.E.Sc Mechanical Engineering<br />
+									3rd Year
 								</p>
 							</CardContent>
 						</Card>
