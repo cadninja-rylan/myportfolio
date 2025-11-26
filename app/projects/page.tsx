@@ -11,20 +11,14 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
-// how many cards you want per row on desktop
-const rowConfigs = [4, 4, 3, 4, 2, 1];
+// desktop row layout: 4, 4, 3, 4, 2, 1, 1, 1
+const rowConfigs = [4, 4, 3, 4, 2, 1, 1, 1];
 
 type Project = (typeof projects)[number];
-
-// clone your 3 projects until we have 18 items to fill 4-4-3-4-2-1
-const expandedProjects: Project[] = Array.from({ length: 18 }, (_, i) => {
-  return projects[i % projects.length];
-});
 
 function gridClassFor(size: number) {
   switch (size) {
     case 4:
-      // 1 col on mobile, 2 on md, 4 on xl+
       return 'grid-cols-1 md:grid-cols-2 xl:grid-cols-4';
     case 3:
       return 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3';
@@ -50,9 +44,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </div>
         <CardContent className="flex-grow p-6">
           <h3 className="font-bold text-xl mb-2">{project.title}</h3>
-          <p className="text-muted-foreground mb-4">{project.description}</p>
+          {project.description && (
+            <p className="text-muted-foreground mb-4">
+              {project.description}
+            </p>
+          )}
           <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag, tagIndex) => (
+            {project.tags?.map((tag, tagIndex) => (
               <Badge key={tagIndex} variant="secondary">
                 {tag}
               </Badge>
@@ -83,14 +81,22 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 }
 
 export default function ProjectsPage() {
-  // slice expandedProjects into rows that follow [4,4,3,4,2,1]
   const rows: Project[][] = [];
   let start = 0;
 
+  // first use the explicit row config: 4,4,3,4,2,1,1
   for (const size of rowConfigs) {
-    const slice = expandedProjects.slice(start, start + size);
-    if (!slice.length) break;
+    if (start >= projects.length) break;
+    const slice = projects.slice(start, start + size);
     rows.push(slice);
+    start += slice.length;
+  }
+
+  // if you have more than 19–20 projects later, put the rest in extra rows of up to 4
+  while (start < projects.length) {
+    const remaining = projects.length - start;
+    const size = Math.min(4, remaining);
+    rows.push(projects.slice(start, start + size));
     start += size;
   }
 
