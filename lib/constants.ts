@@ -141,7 +141,7 @@ export const projects: Project[] = [
 		title: 'Secondary Features and Part Modeling  -  Part #1',
 		description:
 			'Created complex parts using secondary modeling tools such as revolves, linear/circular patterns, cut-extrudes, fillets, and chamfers. Designed functional mechanical components maintaining geometric accuracy and clean parametric design intent.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		image: '/2001.png',
 		tags: ['SolidWorks', 'Extrude', 'Cut-Extrude', 'Revolve', 'Fillets', 'Chamfers', 'Patterning'],
 		link: '#',
 		repo: '#',
@@ -150,7 +150,7 @@ export const projects: Project[] = [
 		title: 'Part #2',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		image: '/2002.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -159,7 +159,7 @@ export const projects: Project[] = [
 		title: 'Part #3',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		image: '/2003.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -168,7 +168,7 @@ export const projects: Project[] = [
 		title: 'Part #4',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		image: '/2004.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -177,7 +177,7 @@ export const projects: Project[] = [
 		title: 'Mechanical Assembly Modeling  -  Part #1',
 		description:
 			'Built multi-component assembliess with fully constrained mates such as concentric, coincident, parallel, tanget, width, and distance mates. Verified kinematic motion.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		image: '/3001.png',
 		tags: ['SolidWorks', 'Assembly', 'Mates', 'Motion Study'],
 		link: '#',
 		repo: '#',
@@ -186,7 +186,7 @@ export const projects: Project[] = [
 		title: 'Part #2',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		image: '/3002.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -195,7 +195,7 @@ export const projects: Project[] = [
 		title: 'Part #3',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		image: '/3003.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -204,7 +204,7 @@ export const projects: Project[] = [
 		title: 'Engineering Drawings and Detailing  -  Part #1',
 		description:
 			'Developed engineering drawings from 3D parts, featuring multi-view projections, section/auxiliary views, precise dimensions, and annotations. Also produced an exploded assembly with a full BOM for clear documentation.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		image: '/4001.png',
 		tags: ['SolidWorks', 'Engineering Drawings', 'Multi-View Projections', 'Section Views', 'Auxiliary Views', 'Exploded Assembly', 'BOM', 'Dimensioning'],
 		link: '#',
 		repo: '#',
@@ -213,7 +213,7 @@ export const projects: Project[] = [
 		title: 'Part #2',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		image: '/4002.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -222,7 +222,7 @@ export const projects: Project[] = [
 		title: 'Part #3',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		image: '/4003.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -231,7 +231,7 @@ export const projects: Project[] = [
 		title: 'Part #4',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		image: '/4004.png',
 		tags: [],
 		link: '#',
 		repo: '#',
@@ -240,7 +240,7 @@ export const projects: Project[] = [
 		title: 'Parametric Design (Equations and Configurations)  -  Part #1',
 		description:
 			'Built fully parametric 3D parts using equations, driven dimensions, and design tables to automate geometry updates and generate multiple part configurations.',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		image: '/5001.png',
 		tags: ['SolidWorks', 'Global Variables', 'Design Tables', 'Configurations'],
 		link: '#',
 		repo: '#',
@@ -249,7 +249,7 @@ export const projects: Project[] = [
 		title: 'Part #2',
 		description:
 			'',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		image: '/5002.png',
 		tags: [],
 		link: '#',
 		repo: '#',
