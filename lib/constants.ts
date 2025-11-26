@@ -107,7 +107,7 @@ export const projects: Project[] = [
 			'Developed fully defined 3D parts using sketch relations, constraints, and primary modeling features like extrudes, extrude cuts, fillets, and chamfers; Focused on clean sketch geometry, and dimension driven modeling for manufacturable components.',
 		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
 		tags: ['SolidWorks', 'Sketching', 'Extrude', 'Extrude Cuts', 'Fillets', 'Chamfers'],
-		link: '#',
+		link: '/1001.png',
 		repo: '#',
 	},
 	{
@@ -116,7 +116,7 @@ export const projects: Project[] = [
 			'',
 		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
 		tags: [],
-		link: '#',
+		link: '/1002.png',
 		repo: '#',
 	},
 	{
@@ -125,7 +125,7 @@ export const projects: Project[] = [
 			'',
 		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
 		tags: [],
-		link: '#',
+		link: '/1003.png',
 		repo: '#',
 	},
 	{
@@ -134,7 +134,7 @@ export const projects: Project[] = [
 			'',
 		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
 		tags: [],
-		link: '#',
+		link: '/1004.png',
 		repo: '#',
 	},
 	{
