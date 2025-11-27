@@ -31,7 +31,7 @@ export function Footer() {
 			title: 'Connect',
 			links: [
 				{ title: 'Contact', href: '/contact' },
-				{ title: 'Resume', href: '#', download: true },
+				{ title: 'Resume', href: '/Rylan Prima Resume.pdf', download: true },
 			],
 		},
 	];
