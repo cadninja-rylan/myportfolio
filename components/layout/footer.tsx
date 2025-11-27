@@ -9,14 +9,8 @@ export function Footer() {
 	const currentYear = new Date().getFullYear();
 
 	const socialLinks = [
-		//{ icon: <Phone className="h-5 w-5" />, href: siteConfig.links.phone, label: 'Phone' },
 		{ icon: <Mail className="h-5 w-5" />, href: siteConfig.links.email, label: 'Email' },
 		{ icon: <Linkedin className="h-5 w-5" />, href: siteConfig.links.linkedin, label: 'LinkedIn' },
-		//{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' },
-		//{ icon: <MessageSquare className="h-5 w-5" />, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
-		//{ icon: <Twitter className="h-5 w-5" />, href: siteConfig.links.twitter, label: 'Twitter' },
-		//{ icon: <Facebook className="h-5 w-5" />, href: siteConfig.links.facebook, label: 'Facebook' },
-		//{ icon: <Instagram className="h-5 w-5" />, href: siteConfig.links.instagram, label: 'Instagram' },
 	];
 
 	const navColumns = [
@@ -24,14 +18,11 @@ export function Footer() {
 			title: 'About Me',
 			links: [
 				{ title: 'About', href: '/about' },
-				//{ title: 'Education', href: '/education' },
-				//{ title: 'Skills', href: '/skills' },
 			],
 		},
 		{
 			title: 'Work',
 			links: [
-				//{ title: 'Experience', href: '/experience' },
 				{ title: 'Projects/ Works', href: '/projects' },
 				{ title: 'Certificates', href: '/certificates' },
 			],
@@ -39,7 +30,6 @@ export function Footer() {
 		{
 			title: 'Connect',
 			links: [
-				//{ title: 'Blog', href: '/blog' },
 				{ title: 'Contact', href: '/contact' },
 				{ title: 'Resume', href: '#', download: true },
 			],
@@ -96,14 +86,17 @@ export function Footer() {
 					<p className="text-muted-foreground">
 						© {currentYear} Rylan Prima. All rights reserved.
 					</p>
-					<div className="mt-4 sm:mt-0 flex gap-4">
+
+					{/* Removed legal links */}
+					{/* <div className="mt-4 sm:mt-0 flex gap-4">
 						<Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
 							Privacy Policy
 						</Link>
 						<Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
 							Terms of Service
 						</Link>
-					</div>
+					</div> */}
+					
 				</div>
 			</div>
 		</footer>
