@@ -9,7 +9,7 @@ export function Footer() {
 	const currentYear = new Date().getFullYear();
 
 	const socialLinks = [
-		{ icon: <Mail className="h-5 w-5" />, href: siteConfig.links.email, label: 'Email' },
+		//{ icon: <Mail className="h-5 w-5" />, href: siteConfig.links.email, label: 'Email' },
 		{ icon: <Linkedin className="h-5 w-5" />, href: siteConfig.links.linkedin, label: 'LinkedIn' },
 	];
 
