@@ -42,13 +42,13 @@ export const siteConfig = {
 	],
 	links: {
 		github: 'https://github.com/yourusername',
-		linkedin: 'https://linkedin.com/in/yourusername',
+		linkedin: 'https://www.linkedin.com/in/rylan-prima/',
 		twitter: 'https://twitter.com/yourusername',
 		facebook: 'https://facebook.com/yourusername',
 		instagram: 'https://instagram.com/yourusername',
 		whatsapp: 'https://wa.me/yourphonenumber',
-		email: 'mailto:youremail@example.com',
-		phone: 'tel:+1234567890',
+		email: 'mailto:rylanprima.mme@gmail.com',
+		phone: 'tel:+16473821578',
 	},
 };
 
