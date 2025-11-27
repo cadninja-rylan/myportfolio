@@ -15,10 +15,10 @@ export const siteConfig = {
 			//title: 'Education',
 			//href: '/education',
 		//},
-		{
-			title: 'Skills',
-			href: '/skills',
-		},
+		//{
+			//title: 'Skills',
+			//href: '/skills',
+		//},
 		//{
 			//title: 'Experience', add this when u land a co-op
 			//href: '/experience',
