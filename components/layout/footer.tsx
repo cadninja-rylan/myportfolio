@@ -9,10 +9,10 @@ export function Footer() {
 	const currentYear = new Date().getFullYear();
 
 	const socialLinks = [
-		{ icon: <Phone className="h-5 w-5" />, href: siteConfig.links.phone, label: 'Phone' },
+		//{ icon: <Phone className="h-5 w-5" />, href: siteConfig.links.phone, label: 'Phone' },
 		{ icon: <Mail className="h-5 w-5" />, href: siteConfig.links.email, label: 'Email' },
 		{ icon: <Linkedin className="h-5 w-5" />, href: siteConfig.links.linkedin, label: 'LinkedIn' },
-		{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' },
+		//{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' },
 		//{ icon: <MessageSquare className="h-5 w-5" />, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
 		//{ icon: <Twitter className="h-5 w-5" />, href: siteConfig.links.twitter, label: 'Twitter' },
 		//{ icon: <Facebook className="h-5 w-5" />, href: siteConfig.links.facebook, label: 'Facebook' },
@@ -25,7 +25,7 @@ export function Footer() {
 			links: [
 				{ title: 'About', href: '/about' },
 				//{ title: 'Education', href: '/education' },
-				{ title: 'Skills', href: '/skills' },
+				//{ title: 'Skills', href: '/skills' },
 			],
 		},
 		{
