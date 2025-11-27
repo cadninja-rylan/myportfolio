@@ -105,12 +105,7 @@ export function HeroSection() {
             >
               About Me
             </Link>
-            <Link
-              href="/skills"
-              className="px-3 py-1 rounded-full border border-border/60 bg-background/60 hover:bg-background/90 transition-colors"
-            >
-              Skills
-            </Link>
+            {/* Skills link removed */}
             <Link
               href="/projects"
               className="px-3 py-1 rounded-full border border-border/60 bg-background/60 hover:bg-background/90 transition-colors"
