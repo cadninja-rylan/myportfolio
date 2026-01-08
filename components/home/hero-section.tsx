@@ -87,7 +87,7 @@ export function HeroSection() {
             </Button>
             <Button size="lg" variant="outline" asChild>
               {/* point href to your resume in /public when you have it */}
-              <Link href="/Rylan Prima Resume.pdf" download>
+              <Link href="/Rylan%20Prima%27s%20Resume.pdf" download>
                 Download Resume <FileDown className="ml-2 h-4 w-4" />
               </Link>
             </Button>
