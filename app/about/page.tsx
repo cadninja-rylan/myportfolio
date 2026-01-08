@@ -28,6 +28,7 @@ export default function AboutPage() {
 							Engineering enables me to turn my imagination into something real,
 							useful, and meaningful.
 						</p>
+
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
 							<p className="text-muted-foreground">
@@ -37,8 +38,13 @@ export default function AboutPage() {
 								settings.
 							</p>
 						</div>
+
+						{/* DOWNLOAD BUTTON – FIXED */}
 						<Button className="mt-6" asChild>
-							<a href="/Rylan Prima Resume.pdf" download>
+							<a
+								href="/Rylan%20Prima%27s%20Resume.pdf"
+								download
+							>
 								Download Resume <ArrowDownCircle className="ml-2 h-4 w-4" />
 							</a>
 						</Button>
@@ -55,17 +61,15 @@ export default function AboutPage() {
 					</motion.div>
 				</motion.div>
 
-				{/* BOTTOM GRID – 3 CARDS WITH IMAGES */}
+				{/* BOTTOM GRID */}
 				<motion.div
 					variants={staggerContainer()}
 					initial="hidden"
 					animate="show"
 					className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
 				>
-					{/* EDUCATION */}
 					<motion.div variants={fadeIn('up', 0.1)}>
 						<Card className="h-full card-gradient overflow-hidden">
-							{/* Top image */}
 							<div className="relative h-48 w-full">
 								<Image
 									src="/WesternLogo.jpg"
@@ -88,7 +92,6 @@ export default function AboutPage() {
 						</Card>
 					</motion.div>
 
-					{/* INTERESTS + HOBBIES */}
 					<motion.div variants={fadeIn('up', 0.2)}>
 						<Card className="h-full card-gradient overflow-hidden">
 							<div className="relative h-48 w-full">
@@ -112,7 +115,6 @@ export default function AboutPage() {
 						</Card>
 					</motion.div>
 
-					{/* ABOUT THIS SITE */}
 					<motion.div variants={fadeIn('up', 0.3)}>
 						<Card className="h-full card-gradient overflow-hidden">
 							<div className="relative h-48 w-full">
@@ -129,8 +131,7 @@ export default function AboutPage() {
 								<p className="text-muted-foreground">
 									I created this site to track my growth and reflect on my
 									accomplishments. It’s a space for me to document progress, stay
-									motivated, and set new goals. By documenting, I can better
-									understand where I’ve been and where I want to go.
+									motivated, and set new goals.
 								</p>
 							</CardContent>
 						</Card>
