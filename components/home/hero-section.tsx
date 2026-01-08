@@ -85,13 +85,14 @@ export function HeroSection() {
                 View Projects <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              {/* point href to your resume in /public when you have it */}
-              <Link href="/Rylan%20Prima%27s%20Resume.pdf" download>
-                Download Resume <FileDown className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </motion.div>
+         <Button size="lg" variant="outline" asChild>
+  <a
+    href="/Rylan%20Prima%27s%20Resume.pdf"
+    download="Rylan_Prima_Resume.pdf"
+  >
+    Download Resume <FileDown className="ml-2 h-4 w-4" />
+  </a>
+</Button>
 
           {/* Quick links row */}
           <motion.nav
