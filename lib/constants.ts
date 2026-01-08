@@ -318,7 +318,7 @@ export type Certificate = {
 export const certificates: Certificate[] = [
 	{
 		title: 'SOLIDWORKS CAD Design Associate (CSWA)',
-		issuer: 'Dassault Systèmes',
+		issuer: 'Dassault Systèmes ',
 		date: 'Oct 2024',
 		id: 'C-E8MZHVLJF9',
 		url: '#',
