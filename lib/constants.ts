@@ -42,7 +42,7 @@ export const siteConfig = {
 	],
 	links: {
 		github: 'https://github.com/yourusername',
-		linkedin: 'https://www.linkedin.com/in/rylan-prima/',
+		linkedin: 'https://www.linkedin.com/in/rylanprima/',
 		twitter: 'https://twitter.com/yourusername',
 		facebook: 'https://facebook.com/yourusername',
 		instagram: 'https://instagram.com/yourusername',
@@ -277,7 +277,7 @@ export type Education = {
 
 export const education: Education[] = [
 	{
-		degree: 'Bachelor of Science',
+		degree: 'Bachelor of Engineering',
 		field: 'Mechanical Engineering',
 		institution: 'University Name',
 		location: 'City, Country',
@@ -318,7 +318,7 @@ export type Certificate = {
 export const certificates: Certificate[] = [
 	{
 		title: 'SOLIDWORKS CAD Design Associate (CSWA)',
-		issuer: 'VirtualTester Online, Tangix Design & Development AB',
+		issuer: 'Dassault Systèmes',
 		date: 'Oct 2024',
 		id: 'C-E8MZHVLJF9',
 		url: '#',
